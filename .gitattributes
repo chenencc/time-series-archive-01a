@@ -1,2 +1,3 @@
 objects/*.bin filter=lfs diff=lfs merge=lfs -text
 index.bin filter=lfs diff=lfs merge=lfs -text
+ticks/*.bin filter=lfs diff=lfs merge=lfs -text

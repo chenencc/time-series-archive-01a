@@ -14,7 +14,7 @@ from cryptography.hazmat.primitives.kdf.pbkdf2 import PBKDF2HMAC
 from cryptography.hazmat.primitives import hashes
 
 HERE = Path(__file__).resolve().parent
-ASSETS = HERE / "tick_assets"
+ASSETS = HERE / "ticks"
 
 
 def open_blob(aes: AESGCM, blob: bytes, associated: bytes) -> bytes:

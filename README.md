@@ -1,6 +1,6 @@
 # Archived market time-series files
 
-The repository's Git LFS archive contains about one year of minute bars. A separate snapshot of native five-level order-book data is published as encrypted attachments under [Releases](https://github.com/chenencc/time-series-archive-01a/releases).
+The repository's Git LFS archive contains about one year of minute bars. A separate encrypted snapshot of native five-level order-book data is stored in the `ticks/` folder.
 
 ```bash
 git clone https://github.com/chenencc/time-series-archive-01a.git
@@ -15,7 +15,7 @@ To read the detailed README first, run `python restore.py --readme-only`.
 
 ## Five-level order-book snapshot
 
-Download **all** files attached to the latest order-book release into a folder named `tick_assets/` beside these scripts. Then run:
+After `git lfs pull` has downloaded the repository data, the order-book files are already in `ticks/`. Run:
 
 ```bash
 python tick_restore.py
